@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /bookstore
+
+spring:
+  datasource:
+    url: jdbc:h2:file:~\testdb
+    driverClassName: org.h2.Driver
+    username: admin
+    password: admin
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+    hibernate:
+        ddl-auto: update
