@@ -23,7 +23,7 @@ import ramos.monteiro.alex.bookstore.service.BaseService;
 @Slf4j
 public abstract class BaseController<T, S extends BaseService<T>> {
 
-    private final S service;
+    protected final S service;
 
     public BaseController(S service) {
         this.service = service;

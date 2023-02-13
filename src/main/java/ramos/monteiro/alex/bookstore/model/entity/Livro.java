@@ -24,7 +24,7 @@ public class Livro {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "isbn", nullable = false, unique = true)
+    @Column(name = "isbn", nullable = false, unique = false)
     private String isbn;
     @JoinColumn(name = "id_categoria", nullable = false)
     @ManyToOne
