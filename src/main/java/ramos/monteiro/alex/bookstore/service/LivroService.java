@@ -9,5 +9,7 @@ public interface LivroService extends BaseService<LivroDTO> {
 	List<LivroDTO> searchLivroByCategory(String categoria);
 
 	List<LivroDTO> searchLivroByEditora(String categoria);
+	
+	List<LivroDTO> searchLivroByNameOrIsbn(String nome, String isbn);
 
 }
